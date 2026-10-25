@@ -44,7 +44,7 @@ def run_evaluation():
     missing_records = [r for r in raw_records if r.get("metadata", {}).get("has_missing_data")]
     conflict_records = [r for r in raw_records if r.get("metadata", {}).get("has_conflicts")]
 
-    print(f"\n    --- Synthetic Dataset Diagnostic Breakdown ---")
+    print("\n    --- Synthetic Dataset Diagnostic Breakdown ---")
     print(f"    • Duplicates ({len(dup_records)} records):")
     for r in dup_records:
         meta = r.get("metadata", {})
