@@ -1,0 +1,696 @@
+[
+  {
+    "id": "inv-001",
+    "canonical_name": "Apex Horizon Ventures",
+    "aliases": [
+      "Apex Horizon Capital LLC",
+      "Apex Horizon VC"
+    ],
+    "canonical_website": "https://www.apexhorizon.vc",
+    "sectors": [
+      "FinTech",
+      "B2B SaaS",
+      "Developer Tools",
+      "CyberSecurity",
+      "AI/ML"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A",
+      "Series B",
+      "Growth"
+    ],
+    "geography": [
+      "Europe",
+      "London, UK",
+      "New York, NY",
+      "North America",
+      "San Francisco, CA"
+    ],
+    "headquarters": "San Francisco, CA",
+    "ticket_size": {
+      "min_usd": 1500000.0,
+      "max_usd": 3000000.0,
+      "currency": "USD",
+      "raw_text": "$1,500,000 to $3,000,000",
+      "formatted_range": "$1.5M - $3M"
+    },
+    "signals": {
+      "portfolio_companies": [
+        "PayStacker",
+        "CloudShield",
+        "LedgerFlow"
+      ],
+      "fund_size": "$250M Fund IV",
+      "leadership": [
+        "Sarah Chen leads the FinTech practice",
+        "Sarah Chen",
+        "Alex Rivera noted aggressive deployment in generative AI infrastructure"
+      ],
+      "key_notes": [
+        "Aggregated from 3 distinct data sources."
+      ]
+    },
+    "sources": [
+      {
+        "source_id": "raw-001",
+        "source_name": "PitchBook 2024 Profile",
+        "retrieved_at": "2024-03-15T10:30:00Z",
+        "raw_name": "Apex Horizon Ventures",
+        "raw_website": "https://www.apexhorizon.vc",
+        "confidence": 0.95,
+        "sectors": [
+          "FinTech",
+          "B2B SaaS",
+          "CyberSecurity"
+        ],
+        "stages": [
+          "Seed",
+          "Series A"
+        ],
+        "geography": [
+          "San Francisco, CA",
+          "North America"
+        ],
+        "headquarters": "San Francisco, CA",
+        "ticket_size": {
+          "min_usd": 1500000.0,
+          "max_usd": 3000000.0,
+          "currency": "USD",
+          "raw_text": "$1,500,000 to $3,000,000",
+          "formatted_range": "$1.5M - $3M"
+        },
+        "signals": {
+          "portfolio_companies": [
+            "PayStacker",
+            "CloudShield",
+            "LedgerFlow"
+          ],
+          "fund_size": null,
+          "leadership": [
+            "Sarah Chen leads the FinTech practice",
+            "Sarah Chen"
+          ],
+          "key_notes": []
+        }
+      },
+      {
+        "source_id": "raw-002",
+        "source_name": "TechCrunch Article (Funding Announcement)",
+        "retrieved_at": "2024-05-20T14:15:00Z",
+        "raw_name": "Apex Horizon Capital LLC",
+        "raw_website": "apexhorizon.vc",
+        "confidence": 0.9,
+        "sectors": [
+          "FinTech",
+          "AI/ML",
+          "Developer Tools"
+        ],
+        "stages": [
+          "Series A",
+          "Series B",
+          "Growth"
+        ],
+        "geography": [
+          "San Francisco, CA",
+          "New York, NY",
+          "North America"
+        ],
+        "headquarters": "San Francisco, CA",
+        "ticket_size": {
+          "min_usd": 5000000.0,
+          "max_usd": 10000000.0,
+          "currency": "USD",
+          "raw_text": "$5,000,000 and $10,000,000",
+          "formatted_range": "$5M - $10M"
+        },
+        "signals": {
+          "portfolio_companies": [],
+          "fund_size": "$250M Fund IV",
+          "leadership": [
+            "Alex Rivera noted aggressive deployment in generative AI infrastructure"
+          ],
+          "key_notes": []
+        }
+      },
+      {
+        "source_id": "raw-003",
+        "source_name": "AngelList / European Ecosystem Directory",
+        "retrieved_at": "2024-01-10T08:00:00Z",
+        "raw_name": "Apex Horizon VC",
+        "raw_website": "https://apexhorizon.vc/europe",
+        "confidence": 0.7,
+        "sectors": [
+          "FinTech",
+          "B2B SaaS",
+          "Developer Tools"
+        ],
+        "stages": [
+          "Pre-Seed",
+          "Seed"
+        ],
+        "geography": [
+          "London, UK",
+          "Europe"
+        ],
+        "headquarters": "London, UK",
+        "ticket_size": {
+          "min_usd": 250000.0,
+          "max_usd": 500000.0,
+          "currency": "USD",
+          "raw_text": "$250k - $500k",
+          "formatted_range": "$250k - $500k"
+        },
+        "signals": {
+          "portfolio_companies": [],
+          "fund_size": null,
+          "leadership": [],
+          "key_notes": []
+        }
+      }
+    ],
+    "conflicts": [
+      {
+        "field": "ticket_size",
+        "severity": "HIGH",
+        "description": "Discrepancy detected across sources: PitchBook 2024 Profile reports $1.5M - $3M, TechCrunch Article (Funding Announcement) reports $5M - $10M, AngelList / European Ecosystem Directory reports $250k - $500k",
+        "conflicting_values": {
+          "PitchBook 2024 Profile": {
+            "min_usd": 1500000.0,
+            "max_usd": 3000000.0,
+            "formatted": "$1.5M - $3M",
+            "source_id": "raw-001"
+          },
+          "TechCrunch Article (Funding Announcement)": {
+            "min_usd": 5000000.0,
+            "max_usd": 10000000.0,
+            "formatted": "$5M - $10M",
+            "source_id": "raw-002"
+          },
+          "AngelList / European Ecosystem Directory": {
+            "min_usd": 250000.0,
+            "max_usd": 500000.0,
+            "formatted": "$250k - $500k",
+            "source_id": "raw-003"
+          }
+        },
+        "suggested_action": "Review primary source filing vs media reports; possible multi-fund strategy or staged checks."
+      },
+      {
+        "field": "geography",
+        "severity": "MEDIUM",
+        "description": "Multiple distinct headquarters reported: PitchBook 2024 Profile: San Francisco, CA, TechCrunch Article (Funding Announcement): San Francisco, CA, AngelList / European Ecosystem Directory: London, UK.",
+        "conflicting_values": {
+          "PitchBook 2024 Profile": "San Francisco, CA",
+          "TechCrunch Article (Funding Announcement)": "San Francisco, CA",
+          "AngelList / European Ecosystem Directory": "London, UK"
+        },
+        "suggested_action": "Confirm primary global headquarters vs regional satellite office."
+      }
+    ],
+    "uncertain_matches": [],
+    "missing_fields": [],
+    "status": "CONFLICT_DETECTED",
+    "completeness_score": 1.0
+  },
+  {
+    "id": "inv-002",
+    "canonical_name": "Bluecrest Growth Partners",
+    "aliases": [
+      "Bluecrest Ventures"
+    ],
+    "canonical_website": "https://bluecrestgp.com",
+    "sectors": [
+      "B2B SaaS",
+      "CyberSecurity",
+      "ClimateTech"
+    ],
+    "stages": [
+      "Seed",
+      "Series B",
+      "Series C",
+      "Growth"
+    ],
+    "geography": [
+      "Boston, MA",
+      "Europe",
+      "North America"
+    ],
+    "headquarters": "Boston, MA",
+    "ticket_size": {
+      "min_usd": 1000000.0,
+      "max_usd": 2500000.0,
+      "currency": "USD",
+      "raw_text": "$1M to $2.5M",
+      "formatted_range": "$1M - $2.5M"
+    },
+    "signals": {
+      "portfolio_companies": [
+        "SolarGrid Systems"
+      ],
+      "fund_size": null,
+      "leadership": [],
+      "key_notes": [
+        "Aggregated from 2 distinct data sources."
+      ]
+    },
+    "sources": [
+      {
+        "source_id": "raw-004",
+        "source_name": "SEC Form D Filing Note",
+        "retrieved_at": "2024-04-02T16:45:00Z",
+        "raw_name": "Bluecrest Growth Partners",
+        "raw_website": "https://bluecrestgp.com",
+        "confidence": 0.98,
+        "sectors": [
+          "B2B SaaS",
+          "CyberSecurity"
+        ],
+        "stages": [
+          "Series B",
+          "Series C",
+          "Growth"
+        ],
+        "geography": [],
+        "headquarters": null,
+        "ticket_size": null,
+        "signals": {
+          "portfolio_companies": [],
+          "fund_size": null,
+          "leadership": [],
+          "key_notes": []
+        }
+      },
+      {
+        "source_id": "raw-005",
+        "source_name": "Crunchbase Community Export",
+        "retrieved_at": "2024-02-18T11:20:00Z",
+        "raw_name": "Bluecrest Ventures",
+        "raw_website": "http://bluecrestgp.com",
+        "confidence": 0.75,
+        "sectors": [
+          "ClimateTech"
+        ],
+        "stages": [
+          "Seed"
+        ],
+        "geography": [
+          "Boston, MA",
+          "North America",
+          "Europe"
+        ],
+        "headquarters": "Boston, MA",
+        "ticket_size": {
+          "min_usd": 1000000.0,
+          "max_usd": 2500000.0,
+          "currency": "USD",
+          "raw_text": "$1M to $2.5M",
+          "formatted_range": "$1M - $2.5M"
+        },
+        "signals": {
+          "portfolio_companies": [
+            "SolarGrid Systems"
+          ],
+          "fund_size": null,
+          "leadership": [],
+          "key_notes": []
+        }
+      }
+    ],
+    "conflicts": [
+      {
+        "field": "stages",
+        "severity": "MEDIUM",
+        "description": "Stage divergence: ['Crunchbase Community Export'] reports early-stage only, whereas ['SEC Form D Filing Note'] reports growth/late-stage only.",
+        "conflicting_values": {
+          "SEC Form D Filing Note": [
+            "Series B",
+            "Series C",
+            "Growth"
+          ],
+          "Crunchbase Community Export": [
+            "Seed"
+          ]
+        },
+        "suggested_action": "Verify if investor operates distinct early-stage and growth/opportunity funds."
+      }
+    ],
+    "uncertain_matches": [],
+    "missing_fields": [],
+    "status": "CONFLICT_DETECTED",
+    "completeness_score": 1.0
+  },
+  {
+    "id": "inv-006",
+    "canonical_name": "Horizon Ventures",
+    "aliases": [],
+    "canonical_website": "https://horizonventures.hk",
+    "sectors": [
+      "AI/ML",
+      "Biotech"
+    ],
+    "stages": [
+      "Series A",
+      "Series B",
+      "Growth"
+    ],
+    "geography": [
+      "Hong Kong"
+    ],
+    "headquarters": "Hong Kong",
+    "ticket_size": {
+      "min_usd": 10000000.0,
+      "max_usd": 30000000.0,
+      "currency": "USD",
+      "raw_text": "$10,000,000 to $30,000,000",
+      "formatted_range": "$10M - $30M"
+    },
+    "signals": {
+      "portfolio_companies": [
+        "Zoom",
+        "DeepMind",
+        "Spotify"
+      ],
+      "fund_size": null,
+      "leadership": [],
+      "key_notes": [
+        "Aggregated from 1 distinct data sources."
+      ]
+    },
+    "sources": [
+      {
+        "source_id": "raw-010",
+        "source_name": "Global VC Directory",
+        "retrieved_at": "2024-03-22T07:45:00Z",
+        "raw_name": "Horizon Ventures",
+        "raw_website": "https://horizonventures.hk",
+        "confidence": 0.95,
+        "sectors": [
+          "AI/ML",
+          "Biotech"
+        ],
+        "stages": [
+          "Series A",
+          "Series B",
+          "Growth"
+        ],
+        "geography": [
+          "Hong Kong"
+        ],
+        "headquarters": "Hong Kong",
+        "ticket_size": {
+          "min_usd": 10000000.0,
+          "max_usd": 30000000.0,
+          "currency": "USD",
+          "raw_text": "$10,000,000 to $30,000,000",
+          "formatted_range": "$10M - $30M"
+        },
+        "signals": {
+          "portfolio_companies": [
+            "Zoom",
+            "DeepMind",
+            "Spotify"
+          ],
+          "fund_size": null,
+          "leadership": [],
+          "key_notes": []
+        }
+      }
+    ],
+    "conflicts": [],
+    "uncertain_matches": [],
+    "missing_fields": [],
+    "status": "SINGLE_SOURCE_UNVERIFIED",
+    "completeness_score": 1.0
+  },
+  {
+    "id": "inv-003",
+    "canonical_name": "Nordic Frontier Fund",
+    "aliases": [
+      "Nordic Frontier VC"
+    ],
+    "canonical_website": "https://nordicfrontier.io",
+    "sectors": [
+      "DeepTech",
+      "B2B SaaS",
+      "AI/ML"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "geography": [
+      "Europe",
+      "Helsinki, Finland",
+      "Nordics & Baltics",
+      "North America"
+    ],
+    "headquarters": "Helsinki, Finland",
+    "ticket_size": {
+      "min_usd": 550000.0,
+      "max_usd": 2200000.0,
+      "currency": "EUR",
+      "raw_text": "\u20ac500,000 to \u20ac2,000,000",
+      "formatted_range": "$550k - $2.2M"
+    },
+    "signals": {
+      "portfolio_companies": [
+        "RoboSense Nordic",
+        "KvanttiLab"
+      ],
+      "fund_size": null,
+      "leadership": [],
+      "key_notes": [
+        "Aggregated from 2 distinct data sources."
+      ]
+    },
+    "sources": [
+      {
+        "source_id": "raw-006",
+        "source_name": "Slush Helsinki Investor Guide",
+        "retrieved_at": "2024-06-01T09:00:00Z",
+        "raw_name": "Nordic Frontier Fund",
+        "raw_website": "https://nordicfrontier.io",
+        "confidence": 0.92,
+        "sectors": [
+          "B2B SaaS",
+          "AI/ML",
+          "DeepTech"
+        ],
+        "stages": [
+          "Seed",
+          "Series A"
+        ],
+        "geography": [
+          "Helsinki, Finland",
+          "Nordics & Baltics"
+        ],
+        "headquarters": "Helsinki, Finland",
+        "ticket_size": {
+          "min_usd": 550000.0,
+          "max_usd": 2200000.0,
+          "currency": "EUR",
+          "raw_text": "\u20ac500,000 to \u20ac2,000,000",
+          "formatted_range": "$550k - $2.2M"
+        },
+        "signals": {
+          "portfolio_companies": [
+            "RoboSense Nordic",
+            "KvanttiLab"
+          ],
+          "fund_size": null,
+          "leadership": [],
+          "key_notes": []
+        }
+      },
+      {
+        "source_id": "raw-007",
+        "source_name": "Founder Community Sheet Submission",
+        "retrieved_at": "2024-06-15T12:00:00Z",
+        "raw_name": "Nordic Frontier VC",
+        "raw_website": null,
+        "confidence": 0.65,
+        "sectors": [
+          "DeepTech"
+        ],
+        "stages": [],
+        "geography": [
+          "Helsinki, Finland",
+          "North America",
+          "Europe"
+        ],
+        "headquarters": "Helsinki, Finland",
+        "ticket_size": {
+          "min_usd": 1100000.0,
+          "max_usd": 1100000.0,
+          "currency": "EUR",
+          "raw_text": "\u20ac1M",
+          "formatted_range": "$1.1M"
+        },
+        "signals": {
+          "portfolio_companies": [],
+          "fund_size": null,
+          "leadership": [],
+          "key_notes": []
+        }
+      }
+    ],
+    "conflicts": [],
+    "uncertain_matches": [
+      {
+        "source_a_id": "raw-006",
+        "source_b_id": "raw-007",
+        "source_a_name": "Nordic Frontier Fund",
+        "source_b_name": "Nordic Frontier VC",
+        "confidence": 0.95,
+        "match_type": "UNCORROBORATED_NAME_MATCH",
+        "reason": "Exact normalized entity name: 'nordic frontier' (uncorroborated by domain)",
+        "suggested_action": "Matched with 95% confidence based on 'Exact normalized entity name: 'nordic frontier' (uncorroborated by domain)'. Manual review recommended because domain verification is absent."
+      }
+    ],
+    "missing_fields": [],
+    "status": "VERIFIED_MULTI_SOURCE",
+    "completeness_score": 1.0
+  },
+  {
+    "id": "inv-005",
+    "canonical_name": "Soma Quantum Capital",
+    "aliases": [],
+    "canonical_website": "https://somaquantum.com",
+    "sectors": [
+      "FinTech",
+      "DeepTech"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "geography": [
+      "Asia-Pacific",
+      "Austin, TX",
+      "North America"
+    ],
+    "headquarters": "Austin, TX",
+    "ticket_size": {
+      "min_usd": 2000000.0,
+      "max_usd": 4000000.0,
+      "currency": "USD",
+      "raw_text": "$2M to $4M",
+      "formatted_range": "$2M - $4M"
+    },
+    "signals": {
+      "portfolio_companies": [],
+      "fund_size": "$75M fund",
+      "leadership": [],
+      "key_notes": [
+        "Aggregated from 1 distinct data sources."
+      ]
+    },
+    "sources": [
+      {
+        "source_id": "raw-009",
+        "source_name": "VentureBeat Tech Brief",
+        "retrieved_at": "2024-05-11T13:10:00Z",
+        "raw_name": "Soma Quantum Capital",
+        "raw_website": "https://somaquantum.com",
+        "confidence": 0.9,
+        "sectors": [
+          "FinTech",
+          "DeepTech"
+        ],
+        "stages": [
+          "Seed",
+          "Series A"
+        ],
+        "geography": [
+          "Austin, TX",
+          "North America",
+          "Asia-Pacific"
+        ],
+        "headquarters": "Austin, TX",
+        "ticket_size": {
+          "min_usd": 2000000.0,
+          "max_usd": 4000000.0,
+          "currency": "USD",
+          "raw_text": "$2M to $4M",
+          "formatted_range": "$2M - $4M"
+        },
+        "signals": {
+          "portfolio_companies": [],
+          "fund_size": "$75M fund",
+          "leadership": [],
+          "key_notes": []
+        }
+      }
+    ],
+    "conflicts": [],
+    "uncertain_matches": [],
+    "missing_fields": [],
+    "status": "SINGLE_SOURCE_UNVERIFIED",
+    "completeness_score": 1.0
+  },
+  {
+    "id": "inv-004",
+    "canonical_name": "Verdant Seed Partners",
+    "aliases": [],
+    "canonical_website": null,
+    "sectors": [
+      "ClimateTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "geography": [],
+    "headquarters": null,
+    "ticket_size": null,
+    "signals": {
+      "portfolio_companies": [],
+      "fund_size": null,
+      "leadership": [
+        "former agronomist Elena Rostova"
+      ],
+      "key_notes": [
+        "Aggregated from 1 distinct data sources."
+      ]
+    },
+    "sources": [
+      {
+        "source_id": "raw-008",
+        "source_name": "Substack Bio (Climate Capital Digest)",
+        "retrieved_at": "2024-07-04T18:30:00Z",
+        "raw_name": "Verdant Seed Partners",
+        "raw_website": null,
+        "confidence": 0.8,
+        "sectors": [
+          "ClimateTech"
+        ],
+        "stages": [
+          "Pre-Seed",
+          "Seed"
+        ],
+        "geography": [],
+        "headquarters": null,
+        "ticket_size": null,
+        "signals": {
+          "portfolio_companies": [],
+          "fund_size": null,
+          "leadership": [
+            "former agronomist Elena Rostova"
+          ],
+          "key_notes": []
+        }
+      }
+    ],
+    "conflicts": [],
+    "uncertain_matches": [],
+    "missing_fields": [
+      "ticket_size",
+      "geography",
+      "website"
+    ],
+    "status": "INCOMPLETE_PROFILE",
+    "completeness_score": 0.45
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "source_id": "raw-001",
+    "source_name": "PitchBook 2024 Profile",
+    "retrieved_at": "2024-03-15T10:30:00Z",
+    "raw_name": "Apex Horizon Ventures",
+    "raw_website": "https://www.apexhorizon.vc",
+    "raw_text": "Apex Horizon Ventures is a premier early-stage venture capital firm. We specialize in Seed and Series A investments with check sizes typically ranging from $1,500,000 to $3,000,000 ($1.5M - $3M). Headquartered in San Francisco, CA, we actively deploy capital across North America. Core focus areas include FinTech, B2B SaaS, and Enterprise Infrastructure. Recent portfolio investments include PayStacker, CloudShield, and LedgerFlow. General Partner Sarah Chen leads the FinTech practice.",
+    "metadata": {
+      "confidence": 0.95,
+      "source_type": "database_export",
+      "dataset_role": "Duplicate & Conflicting",
+      "expected_cluster": "Apex Horizon Ventures",
+      "duplicate_group": "Apex Horizon",
+      "is_duplicate": true,
+      "has_missing_data": false,
+      "missing_fields": [],
+      "has_conflicts": true,
+      "conflict_fields": ["ticket_size", "geography"],
+      "challenge_description": "Duplicate (primary profile); check size ($1.5M-$3M) conflicts with raw-002 ($5M-$10M) and raw-003 ($250k-$500k)."
+    }
+  },
+  {
+    "source_id": "raw-002",
+    "source_name": "TechCrunch Article (Funding Announcement)",
+    "retrieved_at": "2024-05-20T14:15:00Z",
+    "raw_name": "Apex Horizon Capital LLC",
+    "raw_website": "apexhorizon.vc",
+    "raw_text": "Following the close of their $250M Fund IV, Apex Horizon Capital LLC announced an expanded investment thesis. The firm is now leading growth rounds with larger check sizes between $5,000,000 and $10,000,000 ($5M - $10M) for Series A and Series B startups. Expanding beyond FinTech into Artificial Intelligence, ML, and Developer Tools. Operating out of San Francisco and New York, investing across the United States. Managing Director Alex Rivera noted aggressive deployment in generative AI infrastructure.",
+    "metadata": {
+      "confidence": 0.90,
+      "source_type": "press_release",
+      "dataset_role": "Duplicate & Conflicting",
+      "expected_cluster": "Apex Horizon Ventures",
+      "duplicate_group": "Apex Horizon",
+      "is_duplicate": true,
+      "has_missing_data": false,
+      "missing_fields": [],
+      "has_conflicts": true,
+      "conflict_fields": ["ticket_size"],
+      "challenge_description": "Duplicate (legal LLC alias); reports growth ticket size ($5M-$10M) which diverges >2x from raw-001 ($1.5M-$3M)."
+    }
+  },
+  {
+    "source_id": "raw-003",
+    "source_name": "AngelList / European Ecosystem Directory",
+    "retrieved_at": "2024-01-10T08:00:00Z",
+    "raw_name": "Apex Horizon VC",
+    "raw_website": "https://apexhorizon.vc/europe",
+    "raw_text": "Apex Horizon VC European scout syndicate. We provide pre-seed and seed angel checks around $250k - $500k to European software founders. Based in London, United Kingdom. Interested in FinTech and Open Source software.",
+    "metadata": {
+      "confidence": 0.70,
+      "source_type": "scout_directory",
+      "dataset_role": "Duplicate & Conflicting",
+      "expected_cluster": "Apex Horizon Ventures",
+      "duplicate_group": "Apex Horizon",
+      "is_duplicate": true,
+      "has_missing_data": false,
+      "missing_fields": [],
+      "has_conflicts": true,
+      "conflict_fields": ["ticket_size", "geography"],
+      "challenge_description": "Duplicate (regional VC scout alias); reports London HQ (conflicts with SF in raw-001/002) and angel check size ($250k-$500k)."
+    }
+  },
+  {
+    "source_id": "raw-004",
+    "source_name": "SEC Form D Filing Note",
+    "retrieved_at": "2024-04-02T16:45:00Z",
+    "raw_name": "Bluecrest Growth Partners",
+    "raw_website": "https://bluecrestgp.com",
+    "raw_text": "Bluecrest Growth Partners LP filed notice of exempt offering of securities for Bluecrest Fund II totaling $180,000,000. Stated strategy: Series B and Series C expansion capital. Targeting enterprise software and cybersecurity companies.",
+    "metadata": {
+      "confidence": 0.98,
+      "source_type": "regulatory_filing",
+      "dataset_role": "Duplicate, Missing Data & Conflicting",
+      "expected_cluster": "Bluecrest Growth Partners",
+      "duplicate_group": "Bluecrest",
+      "is_duplicate": true,
+      "has_missing_data": true,
+      "missing_fields": ["ticket_size", "geography"],
+      "has_conflicts": true,
+      "conflict_fields": ["stages"],
+      "challenge_description": "Duplicate; missing check size & HQ; reports Series B/C expansion (conflicts with Seed stage in raw-005)."
+    }
+  },
+  {
+    "source_id": "raw-005",
+    "source_name": "Crunchbase Community Export",
+    "retrieved_at": "2024-02-18T11:20:00Z",
+    "raw_name": "Bluecrest Ventures",
+    "raw_website": "http://bluecrestgp.com",
+    "raw_text": "Bluecrest Ventures is an early-stage investor writing checks of $1M to $2.5M for Seed stage startups. Focus includes ClimateTech, Clean Energy, and Sustainability. Headquartered in Boston, Massachusetts, investing across North America and Europe. Key signal: Co-led the $6M round for SolarGrid Systems.",
+    "metadata": {
+      "confidence": 0.75,
+      "source_type": "community_wiki",
+      "dataset_role": "Duplicate & Conflicting",
+      "expected_cluster": "Bluecrest Growth Partners",
+      "duplicate_group": "Bluecrest",
+      "is_duplicate": true,
+      "has_missing_data": false,
+      "missing_fields": [],
+      "has_conflicts": true,
+      "conflict_fields": ["stages"],
+      "challenge_description": "Duplicate (community alias); reports Seed stage focus (conflicts with Series B/C growth in raw-004)."
+    }
+  },
+  {
+    "source_id": "raw-006",
+    "source_name": "Slush Helsinki Investor Guide",
+    "retrieved_at": "2024-06-01T09:00:00Z",
+    "raw_name": "Nordic Frontier Fund",
+    "raw_website": "https://nordicfrontier.io",
+    "raw_text": "Nordic Frontier Fund is a regional venture capital fund backing founders in the Nordics and Baltics (Sweden, Finland, Estonia, Norway). Typical ticket sizes range from €500,000 to €2,000,000 ($550k - $2.2M) at Seed and Series A. Key sectors: DeepTech, Robotics, and B2B SaaS. Managing Partner: Matti Virtanen. Portfolio includes RoboSense Nordic and KvanttiLab.",
+    "metadata": {
+      "confidence": 0.92,
+      "source_type": "conference_database",
+      "dataset_role": "Duplicate (Verified Multi-Source)",
+      "expected_cluster": "Nordic Frontier Fund",
+      "duplicate_group": "Nordic Frontier",
+      "is_duplicate": true,
+      "has_missing_data": false,
+      "missing_fields": [],
+      "has_conflicts": false,
+      "conflict_fields": [],
+      "challenge_description": "Duplicate (primary guide profile); corroborates cleanly with founder referral raw-007 without conflict."
+    }
+  },
+  {
+    "source_id": "raw-007",
+    "source_name": "Founder Community Sheet Submission",
+    "retrieved_at": "2024-06-15T12:00:00Z",
+    "raw_name": "Nordic Frontier VC",
+    "raw_website": null,
+    "raw_text": "Nordic Frontier VC is a great tech fund in Helsinki. Very fast response time. Ticket size around €1M ($1.1M). Really helped us with hardware supply chain in Europe.",
+    "metadata": {
+      "confidence": 0.65,
+      "source_type": "founder_referral",
+      "dataset_role": "Duplicate & Missing Data",
+      "expected_cluster": "Nordic Frontier Fund",
+      "duplicate_group": "Nordic Frontier",
+      "is_duplicate": true,
+      "has_missing_data": true,
+      "missing_fields": ["website"],
+      "has_conflicts": false,
+      "conflict_fields": [],
+      "challenge_description": "Duplicate (community submission); missing official website; ticket agrees with raw-006 range."
+    }
+  },
+  {
+    "source_id": "raw-008",
+    "source_name": "Substack Bio (Climate Capital Digest)",
+    "retrieved_at": "2024-07-04T18:30:00Z",
+    "raw_name": "Verdant Seed Partners",
+    "raw_website": null,
+    "raw_text": "Verdant Seed Partners is a boutique fund dedicated exclusively to regenerative agriculture, biodiversity, and AgriTech. We partner with founders at the Pre-Seed and Seed stages. Founded by former agronomist Elena Rostova. No ticket size publicized; contact partners directly.",
+    "metadata": {
+      "confidence": 0.80,
+      "source_type": "newsletter",
+      "dataset_role": "Incomplete Profile & Missing Data",
+      "expected_cluster": "Verdant Seed Partners",
+      "duplicate_group": null,
+      "is_duplicate": false,
+      "has_missing_data": true,
+      "missing_fields": ["ticket_size", "geography", "website"],
+      "has_conflicts": false,
+      "conflict_fields": [],
+      "challenge_description": "Incomplete profile; missing website, ticket size, and geography (completeness score only 45%)."
+    }
+  },
+  {
+    "source_id": "raw-009",
+    "source_name": "VentureBeat Tech Brief",
+    "retrieved_at": "2024-05-11T13:10:00Z",
+    "raw_name": "Soma Quantum Capital",
+    "raw_website": "https://somaquantum.com",
+    "raw_text": "Soma Quantum Capital closed its maiden $75M fund to invest in Quantum Computing, Cryptography, and Advanced Semiconductors. Based in Austin, Texas, investing across North America and Asia-Pacific. Stage: Seed and Series A, writing checks of $2M to $4M. Announced participation in QuBit Dynamics $10M round.",
+    "metadata": {
+      "confidence": 0.90,
+      "source_type": "tech_news",
+      "dataset_role": "Clean Single-Source (Unverified)",
+      "expected_cluster": "Soma Quantum Capital",
+      "duplicate_group": null,
+      "is_duplicate": false,
+      "has_missing_data": false,
+      "missing_fields": [],
+      "has_conflicts": false,
+      "conflict_fields": [],
+      "challenge_description": "Complete profile with single-source provenance; no duplicates, missing fields, or conflicts."
+    }
+  },
+  {
+    "source_id": "raw-010",
+    "source_name": "Global VC Directory",
+    "retrieved_at": "2024-03-22T07:45:00Z",
+    "raw_name": "Horizon Ventures",
+    "raw_website": "https://horizonventures.hk",
+    "raw_text": "Horizon Ventures is a venture capital firm based in Hong Kong. We back disruptive technology globally across Series A, Series B, and Growth. Ticket sizes $10,000,000 to $30,000,000 ($10M - $30M). Sectors: Biotech, Synthetic Biology, and Artificial Intelligence. Early backers of Zoom, DeepMind, and Spotify.",
+    "metadata": {
+      "confidence": 0.95,
+      "source_type": "curated_directory",
+      "dataset_role": "Negative Control (False-Positive Guard)",
+      "expected_cluster": "Horizon Ventures",
+      "duplicate_group": null,
+      "is_duplicate": false,
+      "has_missing_data": false,
+      "missing_fields": [],
+      "has_conflicts": false,
+      "conflict_fields": [],
+      "challenge_description": "Negative control entity; shares 'Horizon' keyword with Apex Horizon but must remain isolated."
+    }
+  }
+]
